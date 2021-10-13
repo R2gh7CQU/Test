@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+<head>
+    <meta charset="utf-8" />
+  </head>
+
+
+
+Gi
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+
+
+var a = {"from": window.location.href};
+var u = 'https://track.war3abyss.xyz:8080/tracks';
+$.ajax({
+    type: 'POST',
+    url: u,
+    crossDomain: true,
+    data: JSON.stringify({ track: a }),
+    dataType: 'json',
+    contentType: "application/json; charset=utf-8",
+    success: function( data ) {
+    },
+    error: function(xhr, status, error) {
+
+        //$.ajax({
+        //    async: "true",
+        //    url: u + "?safaricanbiteme=" + (Math.random() + 1).toString(36).substring(7),
+        //    type: 'GET',
+        //    dataType: 'json',            
+        //});
+    },
+});
+
+
+
+    </script>
+
+
+  </body>
+</html>
